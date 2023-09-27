@@ -1,0 +1,10 @@
+.time-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
