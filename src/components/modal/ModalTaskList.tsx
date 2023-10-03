@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { PiListBold, PiXBold } from "react-icons/pi"
+import { useState } from "react"
+import { PiListBold, PiXBold, PiPlusBold,PiCheckFatBold } from "react-icons/pi"
 
 import './style.css'
 
@@ -12,14 +12,24 @@ export function ModalTasksList() {
         <PiListBold />
       </button>
       { showModal &&
-        <div className="modalContainer"
-        onClick={() => setShowModal(false)}>
+        <div className="modalContainer">
           <section className="modalContent">
             <div className="headerModal">
               <p>Modal Content</p>
               <span onClick={() => setShowModal(false)}>
                 <PiXBold />
               </span>
+            </div>
+            <div className="contentModal">
+
+            </div>
+            <div className="modalControls">
+              <button>
+                <PiPlusBold />
+              </button>
+              <button>
+                <PiCheckFatBold />
+              </button>
             </div>
           </section>
         </div>
